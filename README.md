@@ -1,4 +1,6 @@
-# seth-learning_project
-please help me if you find there's a problem or mistake i made on my code! 
-i will welcome any critics and suggestion.
-thank for your help
+# Seth-learning_project
+Welcome to my respos
+my name is Seth and I'm new to coding,
+please help me if you find there's a problem or mistake I made on my code! 
+I will welcome any critiques and suggestions.
+I appreciate your help
