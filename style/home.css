@@ -226,4 +226,9 @@ nav {
     .footer-title {
         font-size: 1.2em; 
     }
+
+    .profile-card {
+        width: 100%;
+        max-width: 300px;
+}
 }
