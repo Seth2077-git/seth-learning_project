@@ -226,4 +226,8 @@ nav {
     .footer-title {
         font-size: 1.2em; 
     }
+
+    .profile-container {
+        flex-direction: column;
+    }
 }
