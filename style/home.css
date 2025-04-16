@@ -84,6 +84,7 @@ nav {
 /* Image and Text Styles */
 .img-astronaut {
     margin: 20px auto;
+    margin-bottom: 50px;
     width: 100%;
     max-width: 450px;
     height: auto;
