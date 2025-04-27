@@ -162,25 +162,61 @@ body {
 /* 
    Media Queries
    */
-@media (max-width: 768px) {
-    body {
-        margin: 5px;
-        min-width: 500px;
+@media (max-width: 600px) {
+    .header-section {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Adjust padding */
     }
 
-    .header-section {
-        flex-direction: column; 
-        align-items: flex-start; 
+    .site-title {
+        font-size: 1.5em; /* Adjusted font size */
     }
 
     .nav-list {
-        margin-top: 20px;
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 0.5em; /* Reduced gap */
     }
 
     .nav-item a {
-        font-size: 1.2em; 
+        font-size: 1.2em; /* Adjusted font size */
     }
 
+    .main-content {
+        padding: 15px; /* Adjusted padding */
+    }
+
+    .main-content .error-message {
+        margin: 10px; /* Adjusted margin */
+    }
+
+    .main-content .action-button {
+        width: 90%; /* Full width for action button */
+        padding: 10px; /* Adjusted padding */
+        margin: 15px auto; /* Adjusted margin */
+    }
+
+    .quiz-card {
+        padding: 20px; /* Adjusted padding */
+        margin: 20px auto; /* Adjusted margin */
+    }
+
+    .quiz-title {
+        font-size: 2em; /* Adjusted font size */
+        margin-bottom: 15px; /* Adjusted margin */
+    }
+
+    .quiz-card p {
+        font-size: 1em; /* Adjusted font size */
+    }
+
+    .game-card {
+        padding: 20px; /* Adjusted padding */
+        margin: 20px auto; /* Adjusted margin */
+    }
+
+    .game-title {
+        font-size: 2em; /* Adjusted font size */
+        margin-bottom: 15px; /* Adjusted margin */
+    }
 }
