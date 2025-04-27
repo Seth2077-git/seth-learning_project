@@ -192,7 +192,7 @@ body {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 975px) {
     body {
         margin: 5px; /* Adjusted margin for smaller screens */
     }
@@ -240,6 +240,7 @@ body {
     }
 
     .profile-wrapper {
+        display: flex;
         flex-direction: column; /* Stack profile items vertically */
         align-items: center; /* Center items */
     }
