@@ -194,23 +194,62 @@ body {
 
 @media (max-width: 768px) {
     body {
-        margin: 5px;
-        min-width: 500px;
+        margin: 5px; /* Adjusted margin for smaller screens */
     }
 
     .header-section {
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .site-title {
+        font-size: 1.5em; /* Adjusted font size */
     }
 
     .nav-list {
-        margin-top: 20px;
-        flex-direction: column; 
-        align-items: flex-start; 
+        margin-top: 10px; /* Adjusted margin */
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start; /* Align items to the start */
     }
 
     .nav-item a {
-        font-size: 1.2em; 
+        font-size: 1.2em; /* Adjusted font size */
     }
 
+    .main-content {
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .main-content .course-header {
+        font-size: 1.8em; /* Adjusted font size */
+        max-width: 90%; /* Adjusted max-width for smaller screens */
+    }
+
+    .main-content p {
+        font-size: 1em; /* Adjusted font size */
+    }
+
+    .start-button {
+        width: 90%; /* Full width for action button */
+        font-size: 16px; /* Adjusted font size */
+    }
+
+    .footer-header {
+        font-size: 1.5em; /* Adjusted font size */
+    }
+
+    .profile-wrapper {
+        flex-direction: column; /* Stack profile items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .profile-card {
+        width: 90%; /* Full width for profile card */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .profile-name {
+        margin: 5px 0; /* Adjusted margin */
+    }
 }
