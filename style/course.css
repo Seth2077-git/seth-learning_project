@@ -1,15 +1,21 @@
-/* Global Styles */
-* {
+/* 
+   Reset and Box Sizing
+    */
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
+/* 
+   Body Styles
+   */
 body {
-    margin: 10px;
+    margin: 10px 10px 50px 10px;
     background: rgb(79, 77, 77);
-    color: #000;
+    color: rgb(30, 30, 30);
+    min-width: 580px;
+    min-height: 580px;
 }
 
 /* Header Styles */
@@ -21,7 +27,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-radius: 30px;
     font-family: "Pixelify Sans", sans-serif;
 }
 
@@ -41,6 +46,7 @@ body {
 .site-title {
     color: #e9af69;
     font-size: 2em;
+    border-bottom: solid white;
 }
 
 /* Navigation Styles */
@@ -67,7 +73,6 @@ body {
     color: #e9af69;
 }
 
-
 /* 
    Content Styles
     */
@@ -81,8 +86,15 @@ body {
     border-radius: 10px;
 }
 
+.main-content .course-title {
+    font-size: 3em;
+    margin: 20px auto;
+    border-bottom: 5px solid black;
+    width: 80%;
+}
+
 .main-content .error-message {
-    margin: 50px;
+    margin: 20px;
     font-weight: 100;
     text-transform: capitalize;
 }
@@ -91,12 +103,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 150px;
     padding: 5px 20px;
     margin: 30px auto;
     background-color: black;
     color: white;
     text-decoration: none;
+    font-size: 1.5em;
     font-weight: 900;
     font-family: "Pixelify Sans", sans-serif;
     border: 4px solid black;
@@ -127,7 +140,7 @@ body {
 }
 
 .quiz-title {
-    font-size: 5em;
+    font-size: 3em;
     font-weight: 900;
     border-bottom: 5px solid black;
     margin-bottom: 50px;
@@ -145,9 +158,10 @@ body {
     */
 .game-card {
     background-color: white;
-    width: 100%;
+    width: 90%;
     max-width: 800px;
-    border-bottom: 2px solid black;
+    border: 2px solid black;
+    border-radius: 10px;
     margin: 100px auto 0;
     padding: 40px;
 }
@@ -162,11 +176,21 @@ body {
 /* 
    Media Queries
    */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    body {
+        margin: 5px; /* Adjusted margin for smaller screens */
+    }
+
     .header-section {
         flex-direction: column; /* Stack header items vertically */
         align-items: flex-start; /* Align items to the start */
-        padding: 10px; /* Adjust padding */
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .logo-wrapper {
+        width: 100%;
+        border-bottom: 2px solid white;
+        padding: 20px 0px 20px 10px;
     }
 
     .site-title {
@@ -174,49 +198,12 @@ body {
     }
 
     .nav-list {
+        margin: 20px 0px; /* Adjusted margin */
         flex-direction: column; /* Stack navigation items vertically */
-        gap: 0.5em; /* Reduced gap */
+        align-items: flex-start; /* Align items to the start */
     }
 
     .nav-item a {
         font-size: 1.2em; /* Adjusted font size */
-    }
-
-    .main-content {
-        padding: 15px; /* Adjusted padding */
-    }
-
-    .main-content .error-message {
-        margin: 10px; /* Adjusted margin */
-    }
-
-    .main-content .action-button {
-        width: 90%; /* Full width for action button */
-        padding: 10px; /* Adjusted padding */
-        margin: 15px auto; /* Adjusted margin */
-    }
-
-    .quiz-card {
-        padding: 20px; /* Adjusted padding */
-        margin: 20px auto; /* Adjusted margin */
-    }
-
-    .quiz-title {
-        font-size: 2em; /* Adjusted font size */
-        margin-bottom: 15px; /* Adjusted margin */
-    }
-
-    .quiz-card p {
-        font-size: 1em; /* Adjusted font size */
-    }
-
-    .game-card {
-        padding: 20px; /* Adjusted padding */
-        margin: 20px auto; /* Adjusted margin */
-    }
-
-    .game-title {
-        font-size: 2em; /* Adjusted font size */
-        margin-bottom: 15px; /* Adjusted margin */
     }
 }

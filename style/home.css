@@ -21,7 +21,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-radius: 30px;
     font-family: "Pixelify Sans", sans-serif;
 }
 
@@ -41,6 +40,7 @@ body {
 .site-title {
     color: #e9af69;
     font-size: 2em;
+    border-bottom: solid white;
 }
 
 /* Navigation Styles */
@@ -167,9 +167,9 @@ body {
     max-width: 400px; 
     height: 150px;
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 10px;
     text-align: left; 
     transition: transform 0.3s; 
 }
@@ -184,6 +184,10 @@ body {
     margin-bottom: 5px; 
     height: 70px; 
     width: 70px; 
+}
+
+.profile-disc {
+    width: 200px;
 }
 
 .profile-name {
@@ -203,12 +207,18 @@ body {
         padding: 10px; /* Adjusted padding */
     }
 
+    .logo-wrapper {
+        width: 100%;
+        border-bottom: 2px solid white;
+        padding: 20px 0px 20px 10px;
+    }
+
     .site-title {
         font-size: 1.5em; /* Adjusted font size */
     }
 
     .nav-list {
-        margin-top: 10px; /* Adjusted margin */
+        margin: 20px 0px; /* Adjusted margin */
         flex-direction: column; /* Stack navigation items vertically */
         align-items: flex-start; /* Align items to the start */
     }
@@ -231,7 +241,7 @@ body {
     }
 
     .start-button {
-        width: 90%; /* Full width for action button */
+        width: 20%; /* Full width for action button */
         font-size: 16px; /* Adjusted font size */
     }
 
@@ -243,10 +253,11 @@ body {
         display: flex;
         flex-direction: column; /* Stack profile items vertically */
         align-items: center; /* Center items */
+        gap: 10px;
     }
 
     .profile-card {
-        width: 90%; /* Full width for profile card */
+        width: 100%; /* Full width for profile card */
         height: auto; /* Allow height to adjust based on content */
     }
 
