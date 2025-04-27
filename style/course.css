@@ -1,26 +1,18 @@
-/* 
-   Reset and Box Sizing
-    */
-   * {
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 
-   Body Styles
-   */
+/* Body Styles */
 body {
-    margin: 10px 10px 50px 10px;
+    margin: 10px;
     background: rgb(79, 77, 77);
-    color: rgb(30, 30, 30);
-    min-width: 580px;
-    min-height: 580px;
+    color: #000;
 }
 
-/*
-   Header Styles
-    */
+/* Header Styles */
 .header-section {
     margin: 5px 0;
     background-color: #282828;
@@ -29,6 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    border-radius: 30px;
     font-family: "Pixelify Sans", sans-serif;
 }
 
@@ -50,10 +43,8 @@ body {
     font-size: 2em;
 }
 
-/* 
-   Navigation Styles
-   */
-.navigation {
+/* Navigation Styles */
+.navigation-menu {
     margin-right: 20px;
 }
 
@@ -75,6 +66,7 @@ body {
     text-decoration: underline;
     color: #e9af69;
 }
+
 
 /* 
    Content Styles
