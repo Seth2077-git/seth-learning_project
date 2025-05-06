@@ -155,7 +155,8 @@ body {
 /* Profile Wrapper Styles */
 .profile-wrapper {
     display: flex; 
-    justify-content: space-around;
+    gap: 126px;
+    justify-content: center;
     align-items: center;
     margin: 10px auto; 
 }
