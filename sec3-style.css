@@ -120,3 +120,27 @@
 }
 
 
+
+
+@media (max-width: 1300px) {
+    .video-body {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    .video-container {
+        max-width: 90%; /* Allow more width on smaller screens */
+    }
+    .card-content, .game-card {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+    .quiz h2 {
+        font-size: 18px; /* Slightly smaller font size */
+    }
+    .btn {
+        padding: 8px; /* Adjust button padding */
+    }
+    #next-btn {
+        width: 120px; /* Adjust button width */
+    }
+}
+
+
