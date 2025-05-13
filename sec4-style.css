@@ -22,7 +22,8 @@
 .solar-system {
     position: relative;
     width: 100%;
-    max-width: 50rem;
+    max-width: 100rem;
+    max-height: fit-content;
     aspect-ratio: 1 / 1;
     border-radius: 1.5rem;
     background-color: rgba(31, 41, 55, 0.5);
@@ -302,4 +303,39 @@
 
 .highlight {
     background-color: rgba(255, 255, 0, 0.3);
+}
+
+
+
+@media (max-width: 1300px) {
+    .solar-system-container {
+        margin: 10px;
+        padding: 5px 10px;
+    }
+    .solar-system {
+        max-width: 90rem; /* Adjusted max-width for smaller screens */
+        border-radius: 1rem; /* Slightly reduced border radius */
+    }
+    .sun {
+        width: 4rem; /* Smaller sun size */
+        height: 4rem; /* Smaller sun size */
+    }
+    .planet {
+        width: 1.5rem; /* Adjust planet size */
+        height: 1.5rem; /* Adjust planet size */
+    }
+    .focused-planet-info {
+        padding: 0.5rem; /* Reduced padding */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+    .solar-system-facts {
+        width: 90%; /* Adjusted width for facts card */
+        max-width: 25rem; /* Adjusted max-width */
+    }
+    #searchInput {
+        width: 150px; /* Reduced search input width */
+    }
+    .autocomplete-results {
+        width: 180px; /* Adjusted width for autocomplete */
+    }
 }
